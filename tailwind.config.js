@@ -4,4 +4,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        G
+        Green: "hsl(75, 94%, 57%)",
+        White: "hsl(0, 0%, 100%)",
+        Grey700: "hsl(0, 0%, 20%)",
+        Grey800: "hsl(0, 0%, 12%)",
+        Grey900: "hsl(0, 0%, 8%)",
+      },
+      fontFamily: {
+        Inter: ["Inter"],
+      },
+    },
+  },
+  plugins: [],
+};
