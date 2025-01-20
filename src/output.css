@@ -584,16 +584,21 @@ video {
   font-style: regular;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .block {
@@ -604,8 +609,16 @@ video {
   display: flex;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .w-\[327px\] {
@@ -636,6 +649,11 @@ video {
   border-radius: 0.5rem;
 }
 
+.bg-Grey700 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 20% / var(--tw-bg-opacity, 1));
+}
+
 .bg-Grey800 {
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 12% / var(--tw-bg-opacity, 1));
@@ -646,17 +664,17 @@ video {
   background-color: hsl(0 0% 8% / var(--tw-bg-opacity, 1));
 }
 
-.bg-Grey700 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 20% / var(--tw-bg-opacity, 1));
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-6 {
   padding: 1.5rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -672,16 +690,13 @@ video {
   line-height: 2rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .font-normal {
@@ -698,15 +713,62 @@ video {
   color: hsl(0 0% 100% / var(--tw-text-opacity, 1));
 }
 
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}
+
+.text-green-400 {
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity, 1));
+}
+
 .hover\:bg-Green:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(75 94% 57% / var(--tw-bg-opacity, 1));
 }
 
-.hover\:text-black:hover {
+.hover\:text-Grey800:hover {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+  color: hsl(0 0% 12% / var(--tw-text-opacity, 1));
 }
 
-.hover\:text-Grey800:hover {
- 
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+@media (min-width: 640px) {
+  .sm\:w-\[456px\] {
+    width: 456px;
+  }
+
+  .sm\:p-10 {
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 456px) {
+  .xs\:h-24 {
+    height: 6rem;
+  }
+
+  .xs\:h-2 {
+    height: 0.5rem;
+  }
+
+  .xs\:h-4 {
+    height: 1rem;
+  }
+
+  .xs\:w-24 {
+    width: 6rem;
+  }
+
+  .xs\:w-2 {
+    width: 0.5rem;
+  }
+
+  .xs\:w-4 {
+    width: 1rem;
+  }
+}
