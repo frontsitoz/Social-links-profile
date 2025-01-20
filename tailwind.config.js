@@ -14,4 +14,9 @@ module.exports = {
         Inter: ["Inter"],
       },
       screens: {
-        xs: {
+        xs: { max: "456px" }, // Agregas un punto de ruptura menor a 456px
+      },
+    },
+  },
+  plugins: [],
+};
